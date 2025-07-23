@@ -14,7 +14,7 @@ A modern Christmas-themed web application built with Next.js, allowing users to 
 ## 🚀 Technology Stack
 
 **Frontend Framework:**
-- Next.js 14 (App Router)
+- Next.js 15 (App Router)
 - React 18
 - TypeScript 5
 

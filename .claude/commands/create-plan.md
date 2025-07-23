@@ -15,7 +15,7 @@ Create a development plan for a new feature in the Hallmark Giving Tree project.
    - Christmas theme integration (if applicable)
 
 **Template includes:**
-- Next.js 14 App Router considerations
+- Next.js 15 App Router considerations
 - Tailwind CSS styling approach  
 - React Context state management
 - Server Actions for mutations

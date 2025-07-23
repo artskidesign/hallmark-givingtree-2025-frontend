@@ -24,6 +24,6 @@ Create a new feature branch for Hallmark Giving Tree development.
 
 **Project-specific considerations:**
 - Consider Christmas theme impact
-- Ensure Next.js App Router compatibility
+- Ensure Next.js 15 App Router compatibility
 - Maintain TypeScript strict mode compliance
 - Follow Tailwind CSS utility-first approach
