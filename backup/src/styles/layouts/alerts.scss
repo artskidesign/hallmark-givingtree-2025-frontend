@@ -1,0 +1,46 @@
+.swal2-container {
+  .swal2-popup {
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 0 0.625em $primary-hover;
+    background-color: $primary;
+    padding: 1em;
+
+    .swal2-header {
+      .swal2-title {
+        padding: 0;
+        margin: 0;
+        color: $white;
+      }
+    }
+
+    .swal2-content {
+      font-family: $gotham;
+      margin: 4px 0;
+      color: $white;
+      text-align: left;
+    }
+  }
+
+  .swal2-timer-progress-bar-container {
+    background: rgba(255, 255, 255, 0.4);
+
+    .swal2-timer-progress-bar {
+      background: $primary;
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+.swal-popup-hide {
+  opacity: 0;
+  transform: translateY(-100%);
+  animation: all 0.5s ease-in;
+}
+
+.swal-popup-show {
+  opacity: 1;
+  transform: translateY(0);
+  animation: all 0.5s ease-in;
+}

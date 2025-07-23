@@ -1,0 +1,80 @@
+// Hallmark Giving Tree - SCSS Variables
+
+// Brand Colors
+$hallmark-red: #8B0000;
+$hallmark-gold: #DAA520;
+$hallmark-green: #228B22;
+$hallmark-white: #FFFFFF;
+
+// Semantic Colors
+$primary-color: $hallmark-red;
+$secondary-color: $hallmark-gold;
+$success-color: $hallmark-green;
+$error-color: #DC3545;
+$warning-color: #FFC107;
+$info-color: #17A2B8;
+
+// Background Colors
+$bg-primary: #FFFFFF;
+$bg-secondary: #F8F9FA;
+$bg-dark: #343A40;
+
+// Text Colors
+$text-primary: #212529;
+$text-secondary: #6C757D;
+$text-muted: #868E96;
+$text-white: #FFFFFF;
+
+// Spacing
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-xxl: 3rem;
+
+// Breakpoints
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+// Border Radius
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+$border-radius-xl: 16px;
+
+// Shadows
+$shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+$shadow-md: 0 2px 8px rgba(0,0,0,0.15);
+$shadow-lg: 0 4px 16px rgba(0,0,0,0.18);
+
+// Typography
+$font-family-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+$font-family-serif: Georgia, 'Times New Roman', Times, serif;
+$font-family-mono: 'SF Mono', Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-base: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-size-xxl: 1.5rem;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Z-index
+$z-dropdown: 1000;
+$z-sticky: 1020;
+$z-fixed: 1030;
+$z-modal-backdrop: 1040;
+$z-modal: 1050;
+$z-popover: 1060;
+$z-tooltip: 1070;

@@ -1,0 +1,23 @@
+window.config = {
+  appUrl: 'https://thegivingtree.hallmarkchannel.com/',
+  facebookAppId: '385631279350216',
+  enableGoogleAnalytics: true,
+  enableOmniture: true,
+  enableComScore: true,
+  enableFreewheel: true,
+  googleAnalyticsWebPropertyId: 'G-GPPTHEF5V4',
+  crossDomainGoogleAnalyticsWebPropertyId: 'UA-124488191-1',
+  networkId: 379152,
+  serverUrl: 'https://5c910.v.fwmrm.net/ad/g/1',
+  profileId: '379152:hallmark_bc_html5_live',
+  siteSectionId: 'hc_microsite_the_givingtree',
+  navBarColor: '#ba0020',
+  navBarLink: 'https://www.hallmarkchannel.com/christmas',
+  navBarFranchise: 'Christmas',
+  treeImage: 'https://hallmarkapps.azureedge.net/thegivingtree/sharing/share_tree_{0}.jpg',
+  tweetGeneric: 'Come join me and the Giving Tree community to light up Christmas with good deeds',
+  tweetMyTree: "I have completed [deedCount] good deeds for @HallmarkChannel's The Giving Tree!",
+  pinterestGeneric:
+    'Join thousands of people in performing good deeds this holiday season to light up the community tree and your own tree!',
+  pinterestMyTree: "I have completed [deedCount] good deeds for @HallmarkChannel's The Giving Tree!",
+};

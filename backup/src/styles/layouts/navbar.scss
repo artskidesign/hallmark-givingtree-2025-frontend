@@ -1,0 +1,277 @@
+.main-nav {
+  width: 100%;
+  position: relative;
+
+  @media (max-width: $bp-sm-max) {
+    background-color: $white;
+    border-bottom: 1px solid #c4c4c4;
+    z-index: 20;
+  }
+
+  @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+    padding: 8px 15px;
+    max-width: 720px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    z-index: 10;
+  }
+
+  @media (min-width: $bp-lg-min) and (max-width: $bp-lg-max) {
+    padding: 8px 15px;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    z-index: 10;
+  }
+
+  @media (min-width: $bp-xl-min) {
+    padding: 24px 32px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    z-index: 10;
+  }
+
+  @media (min-width: 1800px) {
+    padding: 24px 15px;
+    max-width: 1140px;
+    width: calc(100vw - 696px);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
+  & > div {
+    @media (min-width: $bp-md-min) {
+      flex: 1;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  & > a {
+    @media (max-width: $bp-sm-max) {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+
+  .NoOutlineBtn.MuiButtonBase-root {
+    padding-left: 0;
+    padding-right: 0;
+
+    .BtnLabel {
+      @media (min-width: $bp-md-min) and (max-width: $bp-lg-max) {
+        font-size: 12px;
+      }
+
+      svg {
+        @media (min-width: $bp-md-min) and (max-width: $bp-lg-max) {
+          margin-right: 6px;
+          height: 12px;
+        }
+      }
+    }
+  }
+
+  .tree-nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    a {
+      button {
+        white-space: nowrap;
+
+        .BtnLabel {
+          @media (min-width: $bp-md-min) and (max-width: $bp-lg-max) {
+            font-size: 14px;
+          }
+        }
+
+        svg {
+          @media (min-width: $bp-md-min) and (max-width: $bp-lg-max) {
+            margin-right: 6px;
+            height: 12px;
+          }
+        }
+      }
+
+      &:first-of-type {
+        @media (max-width: $bp-sm-max) {
+          border-right: 1px solid #c4c4c4;
+        }
+
+        @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+          margin-right: 8px;
+        }
+
+        @media (min-width: $bp-lg-min) {
+          margin-right: 16px;
+        }
+      }
+
+      @media (max-width: $bp-sm-max) {
+        flex: 1;
+      }
+
+      .main-nav-link {
+        @media (max-width: $bp-sm-max) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 8px 0;
+        }
+
+        svg {
+          height: 20px;
+
+          path {
+            fill: $gray;
+          }
+        }
+
+        p {
+          font-weight: $font-weight-black;
+          font-size: 10px;
+          text-transform: uppercase;
+          color: $gray;
+          margin: 0 0 0 4px;
+        }
+
+        &.nav-link-active {
+          p {
+            color: $primary;
+          }
+
+          svg path {
+            fill: $primary;
+          }
+        }
+      }
+    }
+
+    .PrimaryBtn.MuiButtonBase-root {
+      box-shadow: none;
+    }
+  }
+
+  &.light-nav {
+    .BtnLabel {
+      color: $white;
+
+      svg path {
+        fill: $white;
+      }
+    }
+
+    p {
+      color: $white;
+    }
+
+    .logout-link a {
+      color: #b0c4dd !important;
+    }
+
+    .GreyOutlineBtn.MuiButtonBase-root {
+      border: 1px solid $white;
+    }
+  }
+}
+
+.main-nav-ad {
+  position: relative;
+}
+
+.logout-link {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  text-transform: uppercase;
+
+  @media (max-width: $bp-xs-max) {
+    font-size: 11px;
+    margin-top: 4px;
+  }
+
+  @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+
+  @media (min-width: $bp-md-min) and (max-width: $bp-lg-max) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $bp-xl-min) {
+    font-size: 18px;
+  }
+
+  a {
+    text-decoration: underline !important;
+    cursor: pointer;
+
+    @media (max-width: $bp-sm-max) {
+      color: $white !important;
+      margin-left: 4px;
+    }
+
+    @media (min-width: $bp-md-min) and (max-width: $bp-lg-max) {
+      margin-left: 4px;
+      color: $primary !important;
+      font-size: 12px;
+    }
+
+    @media (min-width: $bp-xl-min) {
+      margin-left: 16px;
+      color: $primary !important;
+      font-size: 80%;
+    }
+  }
+
+  p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+
+    @media (max-width: $bp-xs-max) {
+      color: $white;
+      max-width: calc(50vw - 90px);
+    }
+
+    @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+      color: $white;
+      max-width: calc(50vw - 110px);
+    }
+
+    @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+      max-width: 90px;
+      font-size: 12px;
+    }
+
+    @media (min-width: $bp-lg-min) and (max-width: $bp-lg-max) {
+      max-width: 190px;
+      font-size: 12px;
+    }
+
+    @media (min-width: $bp-xl-min) {
+      max-width: 200px;
+    }
+  }
+
+  a,
+  p {
+    font-weight: $font-weight-bold;
+  }
+}

@@ -1,0 +1,581 @@
+.modal-dialog {
+  @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+    max-width: 510px !important;
+  }
+
+  @media (min-width: $bp-md-min) and (max-width: $bp-lg-max) {
+    max-width: 700px !important;
+  }
+
+  @media (min-width: $bp-xl-min) {
+    max-width: 870px !important;
+  }
+}
+
+.modal-content {
+  background: $white;
+
+  @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+    border-radius: 8px;
+  }
+
+  @media (min-width: $bp-md-min) {
+    border-radius: 12px;
+  }
+
+  .landing-modal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 48px;
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .landing-modal-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 100%;
+
+      @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+        flex-wrap: wrap;
+      }
+
+      .hallmark-modal-logo {
+        @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+          width: 60px;
+          order: 1;
+        }
+
+        @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+          width: 80px;
+        }
+
+        @media (min-width: $bp-lg-min) {
+          width: 100px;
+          margin-top: 15px;
+        }
+      }
+
+      .horizontal-logo {
+        @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+          width: 280px;
+          height: auto;
+          order: 3;
+          margin: 0 auto;
+          // margin-top: 32px;
+        }
+
+        @media (min-width: $bp-md-min) and (max-width: $bp-lg-max) {
+          width: 350px;
+          height: auto;
+        }
+
+        @media (min-width: $bp-xl-min) {
+          width: 400px;
+          height: auto;
+        }
+      }
+
+      .sponsor-logo {
+        display: flex;
+        align-items: center;
+        // flex: 1;
+        // position: absolute;
+
+        @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+          order: 2;
+          // top: 32px;
+          // left: 32px;
+        }
+
+        @media (min-width: $bp-md-min) and (max-width: $bp-lg-max) {
+          // top: 32px;
+          // left: 32px;
+          flex-direction: column;
+        }
+
+        @media (min-width: $bp-xl-min) {
+          // top: 48px;
+          // left: 48px;
+          flex-direction: column;
+        }
+
+        p {
+          letter-spacing: 0.07em;
+          text-transform: uppercase;
+          color: $text-darkgreen;
+
+          @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+            font-size: 10px;
+            margin-right: 4px;
+            margin-bottom: 0;
+            font-weight: $font-weight-bold;
+          }
+
+          @media (min-width: $bp-md-min) {
+            font-size: 11px;
+            text-align: center;
+            margin-bottom: 4px;
+            font-weight: $font-weight-medium;
+          }
+        }
+
+        img {
+          @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+            width: 60px;
+          }
+
+          @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+            width: 80px;
+          }
+
+          @media (min-width: $bp-lg-min) {
+            width: 100px;
+          }
+        }
+      }
+    }
+
+    .NoOutlineBtn.MuiButtonBase-root {
+      margin-top: 15px;
+
+      @media (min-width: $bp-md-min) {
+        svg {
+          height: 12px;
+        }
+        .BtnLabel {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .PrimaryBtn.MuiButtonBase-root {
+      @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+        border-radius: 6px;
+      }
+
+      .BtnLabel {
+        @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+          font-size: 22px;
+        }
+        @media (min-width: $bp-lg-min) {
+          font-size: 25px;
+        }
+      }
+    }
+
+    .outline {
+      position: absolute;
+      width: calc(100% - 40px);
+      height: calc(100% - 40px);
+      top: 20px;
+      left: 20px;
+      border: 3px solid $ctc-darkred;
+
+      .close-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(50%) translateY(-50%);
+        background-color: $white;
+        cursor: pointer;
+        padding: 0 0 6px 6px;
+
+        svg {
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+
+.steps {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+
+  @media (max-width: $bp-xs-max) {
+    margin: 40px 0;
+    flex-direction: column;
+  }
+
+  @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+    margin: 8px 0 16px 0;
+    flex-direction: column;
+  }
+
+  @media (min-width: $bp-md-min) and (max-width: $bp-lg-max) {
+    margin: 16px 0 8px 0;
+  }
+
+  @media (min-width: $bp-xl-min) {
+    margin: 32px 0 16px 0;
+  }
+
+  .arrow {
+    position: absolute;
+    left: 50%;
+    width: 14px;
+
+    @media (max-width: $bp-sm-max) {
+      transform: translateX(-50%) translateY(-10px) rotate(270deg);
+    }
+
+    @media (min-width: $bp-md-min) and (max-width: $bp-lg-max) {
+      transform: translateX(-20px) rotate(180deg);
+      top: 112px;
+    }
+
+    @media (min-width: $bp-xl-min) {
+      transform: translateX(-22px) rotate(180deg);
+      top: 121px;
+    }
+
+    path {
+      fill: $primary;
+    }
+  }
+
+  .step {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+
+    @media (min-width: $bp-md-min) {
+      flex-direction: column;
+      width: 50%;
+    }
+
+    &:nth-of-type(2) {
+      @media (max-width: $bp-xs-max) {
+        margin-top: 32px;
+      }
+
+      @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+        margin-top: 20px;
+      }
+    }
+
+    p {
+      font-weight: $font-weight-bold;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: $text;
+      max-width: 100%;
+
+      .highlighted,
+      &.highlighted {
+        @media (max-width: $bp-sm-max) {
+          color: $secondary;
+        }
+      }
+
+      @media (max-width: $bp-sm-max) {
+        font-size: 17px;
+        line-height: 20px;
+        margin-bottom: 0;
+      }
+
+      @media (min-width: $bp-md-min) and (max-width: $bp-lg-max) {
+        text-align: center;
+        margin-top: 8px;
+      }
+
+      @media (min-width: $bp-xl-min) {
+        font-size: 21px;
+        line-height: 25px;
+        text-align: center;
+        margin-top: 16px;
+      }
+    }
+
+    svg,
+    img {
+      @media (max-width: $bp-xs-max) {
+        width: 65px;
+        min-width: 65px;
+        margin-right: 16px;
+      }
+
+      @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+        width: 80px;
+        min-width: 80px;
+        margin-right: 16px;
+      }
+
+      @media (min-width: $bp-md-min) and (max-width: $bp-lg-max) {
+        height: 100px;
+      }
+
+      @media (min-width: $bp-xl-min) {
+        height: 100px;
+      }
+    }
+
+    .modal-checkbox-container {
+      @media (max-width: $bp-xs-max) {
+        margin: 0 35px 0 15px;
+      }
+
+      @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+        margin: 0 36px 0 20px;
+      }
+
+      @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+        margin: 40px 0 20px 0;
+      }
+
+      @media (min-width: $bp-lg-min) and (max-width: $bp-lg-max) {
+        margin: 40px 0 20px 0;
+      }
+
+      @media (min-width: $bp-xl-min) {
+        margin-top: 40px;
+      }
+
+      .modal-checkbox {
+        display: block;
+        position: relative;
+
+        @media (max-width: $bp-xs-max) {
+          height: 30px;
+          width: 30px;
+        }
+
+        @media (min-width: $bp-sm-min) and (max-width: $bp-lg-max) {
+          height: 40px;
+          width: 40px;
+        }
+
+        @media (min-width: $bp-xl-min) {
+          height: 60px;
+          width: 60px;
+        }
+
+        &.modal-checkbox-animated {
+          .modal-checkmark {
+            @media (max-width: $bp-xs-max) {
+              border: 3px solid $text-darkgreen;
+            }
+
+            @media (min-width: $bp-sm-min) and (max-width: $bp-lg-max) {
+              border: 4px solid $text-darkgreen;
+            }
+
+            @media (min-width: $bp-xl-min) {
+              border: 5px solid $text-darkgreen;
+            }
+
+            & > div {
+              &:before {
+                height: 40%;
+                transition: height 300ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+              }
+
+              &:after {
+                width: 120%;
+                transition: width 300ms 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+              }
+            }
+          }
+        }
+
+        .modal-checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 3px;
+          background-color: transparent;
+          transition: all 0.5s ease-in;
+
+          @media (max-width: $bp-xs-max) {
+            height: 30px;
+            width: 30px;
+            border: 3px solid #cccccc;
+          }
+
+          @media (min-width: $bp-sm-min) and (max-width: $bp-lg-max) {
+            height: 40px;
+            width: 40px;
+            border: 4px solid #cccccc;
+          }
+
+          @media (min-width: $bp-xl-min) {
+            height: 60px;
+            width: 60px;
+            border: 5px solid #cccccc;
+          }
+
+          & > div {
+            position: absolute;
+            transform: rotate(-45deg) translateX(8px) translateY(4px) scale(0.8);
+            transform-origin: center left;
+
+            @media (max-width: $bp-xs-max) {
+              height: 30px;
+              width: 25px;
+            }
+
+            @media (min-width: $bp-sm-min) and (max-width: $bp-lg-max) {
+              height: 40px;
+              width: 40px;
+            }
+
+            @media (min-width: $bp-xl-min) {
+              height: 60px;
+              width: 60px;
+            }
+
+            &:before,
+            &:after {
+              content: '';
+              position: absolute;
+              background-color: $text-darkgreen;
+            }
+
+            &:before {
+              height: 0%;
+              top: 50%;
+              left: 2px;
+            }
+
+            &:after {
+              width: 0%;
+              bottom: 0;
+              left: 2px;
+            }
+
+            &:first-of-type {
+              &:before,
+              &:after {
+                background-color: $white;
+                z-index: 1;
+              }
+
+              &:before {
+                @media (max-width: $bp-xs-max) {
+                  width: 6px;
+                }
+
+                @media (min-width: $bp-sm-min) and (max-width: $bp-lg-max) {
+                  width: 8px;
+                }
+
+                @media (min-width: $bp-xl-min) {
+                  width: 12px;
+                }
+              }
+
+              &:after {
+                @media (max-width: $bp-xs-max) {
+                  height: 10px;
+                }
+
+                @media (min-width: $bp-sm-min) and (max-width: $bp-lg-max) {
+                  height: 12px;
+                }
+
+                @media (min-width: $bp-xl-min) {
+                  height: 14px;
+                }
+                bottom: -3px;
+              }
+            }
+
+            &:nth-of-type(2) {
+              &:before,
+              &:after {
+                background-color: $text-darkgreen;
+                z-index: 2;
+              }
+
+              &:before {
+                @media (max-width: $bp-xs-max) {
+                  width: 4px;
+                }
+
+                @media (min-width: $bp-sm-min) and (max-width: $bp-lg-max) {
+                  width: 6px;
+                }
+
+                @media (min-width: $bp-xl-min) {
+                  width: 8px;
+                }
+              }
+
+              &:after {
+                @media (max-width: $bp-xs-max) {
+                  height: 4px;
+                }
+
+                @media (min-width: $bp-sm-min) and (max-width: $bp-lg-max) {
+                  height: 6px;
+                }
+
+                @media (min-width: $bp-xl-min) {
+                  height: 8px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // &:after {
+  //   content: '';
+  //   position: absolute;
+  //   z-index: 1;
+  //   background-color: $text-darkgreen;
+
+  //   @media (max-width: $bp-sm-max) {
+  //     top: 10px;
+  //     left: 24px;
+  //     width: 3px;
+  //     height: calc(100% - 20px);
+  //   }
+
+  //   @media (min-width: $bp-md-min) and (max-width: $bp-lg-max) {
+  //     left: 80px;
+  //     top: 44px;
+  //     height: 5px;
+  //     width: calc(100% - 160px);
+  //   }
+
+  //   @media (min-width: $bp-xl-min) {
+  //     left: 240px;
+  //     top: 60px;
+  //     height: 8px;
+  //     width: calc(100% - 460px);
+  //   }
+  // }
+}
+
+.intro-page {
+  .header-text {
+    h1 {
+      @media (max-width: $bp-xs-max) {
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        font-weight: $font-weight-bold;
+      }
+    }
+  }
+
+  .NoOutlineBtn.MuiButtonBase-root {
+    @media (max-width: $bp-xs-max) {
+      margin: 32px auto 16px auto;
+    }
+
+    @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+      margin: 16px auto 0 auto;
+    }
+  }
+}

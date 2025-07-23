@@ -1,0 +1,36 @@
+import BulbPosition from './BulbPosition';
+
+const YourTreeBulbPositions: Array<BulbPosition> = [
+    { left: 261, top: 188 },
+    { left: 523, top: 344 },
+    { left: 282, top: 489 },
+    { left: 441, top: 472 },
+    { left: 373, top: 286 },
+    { left: 106, top: 455 },
+    { left: 365, top: 632 },
+    { left: 602, top: 595 },
+    { left: 232, top: 348 },
+    { left: 412, top: 211 },
+    { left: 527, top: 480 },
+    { left: 65, top: 670 },
+    { left: 192, top: 559 },
+    { left: 335, top: 397 },
+    { left: 425, top: 580 },
+    { left: 246, top: 631 },
+    { left: 332, top: 209 },
+    { left: 373, top: 74 },
+    { left: 455, top: 401 },
+    { left: 297, top: 100 },
+    { left: 203, top: 464 },
+    { left: 155, top: 341 },
+    { left: 91, top: 568 },
+    { left: 655, top: 640 },
+    { left: 301, top: 306 },
+    { left: 527, top: 574 },
+    { left: 459, top: 313 },
+    { left: 335, top: 557 },
+    { left: 479, top: 616 },
+    { left: 400, top: 121 },
+];
+
+export default YourTreeBulbPositions;

@@ -1,0 +1,636 @@
+.btn-text {
+  height: 100%;
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+
+.video-js .vjs-control:focus {
+  outline: none !important;
+}
+
+.ShareBtn.MuiButtonBase-root {
+  background: $white;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: $bp-md-max) {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+  }
+
+  @media (min-width: $bp-lg-min) {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+  }
+
+  &:hover {
+    background: $white;
+
+    @media (hover: hover) {
+      transform: translateY(-0.1em);
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.Mui-disabled {
+    background-color: $white;
+
+    &:hover {
+      background-color: $white;
+    }
+  }
+
+  svg {
+    @media (max-width: $bp-md-max) {
+      height: 25px;
+      width: 25px;
+    }
+
+    @media (min-width: $bp-lg-min) {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  &.FacebookBtn {
+    // margin-left: 24px;
+
+    svg {
+      path {
+        fill: $facebook-blue;
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: $facebook-blue-hover;
+        }
+      }
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2pt rgba(66, 103, 178, 0.3) !important;
+    }
+  }
+
+  &.TwitterBtn {
+    margin-left: 12px;
+
+    svg {
+      path {
+        fill: $twitter-blue;
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: $twitter-blue-hover;
+        }
+      }
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2pt rgba(27, 149, 224, 0.3) !important;
+    }
+  }
+
+  &.PinterestBtn {
+    margin-left: 12px;
+
+    svg {
+      path {
+        fill: $pinterest-red;
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: $pinterest-red-hover;
+        }
+      }
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2pt rgba(189, 8, 28, 0.3) !important;
+    }
+  }
+}
+
+.GreyOutlineBtn.MuiButtonBase-root {
+  background: transparent;
+  border: 1px solid #878787;
+  color: $text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.025);
+    color: $text;
+    @media (hover: hover) {
+      transform: translateY(-0.1em);
+    }
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2pt rgba(255, 255, 255, 0.3) !important;
+  }
+
+  &.Mui-disabled {
+    background-color: transparent;
+    color: $text;
+
+    &:hover {
+      background-color: transparent;
+      color: $text;
+    }
+  }
+
+  .BtnLabel {
+    font-family: $gotham;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  svg {
+    path {
+      fill: $text;
+    }
+  }
+}
+
+.NoOutlineBtn.MuiButtonBase-root {
+  background: transparent;
+  border: none;
+  color: $text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $sm-button-radius;
+  transition: 0.5s ease-in-out;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.025);
+    color: $primary;
+
+    svg {
+      path {
+        fill: $primary;
+      }
+    }
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2pt rgba(0, 0, 0, 0.1) !important;
+  }
+
+  &.Mui-disabled {
+    background-color: transparent;
+    color: $text;
+
+    &:hover {
+      background-color: transparent;
+      color: $text;
+    }
+  }
+
+  .BtnLabel {
+    font-family: $gotham;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  svg {
+    path {
+      fill: $text;
+      transition: 0.5s ease-in-out;
+    }
+  }
+}
+
+.PrimaryBtn.MuiButtonBase-root {
+  background: $primary;
+  color: $white;
+  border: 1px solid $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+  box-shadow: $md-button-shadow;
+
+  &:hover {
+    background: $primary-hover;
+    color: $white;
+    @media (hover: hover) {
+      transform: translateY(-0.1em);
+    }
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2pt rgba(186, 0, 32, 0.3), $md-button-shadow !important;
+  }
+
+  &.Mui-disabled {
+    background-color: $primary;
+    color: $white;
+
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+
+  .BtnLabel {
+    font-family: $gotham;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  svg {
+    path {
+      fill: $white;
+    }
+  }
+}
+
+.InlineFormBtn.MuiButtonBase-root {
+  background: $primary;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $dark-gray;
+
+  @media (hover: hover) {
+    &:hover {
+      background: $primary-hover;
+      color: $white;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2pt rgba(53, 154, 93, 0.3) !important;
+  }
+
+  &.Mui-disabled {
+    background-color: $primary;
+    color: $white;
+
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+
+  .BtnLabel {
+    font-family: $gotham;
+    font-weight: $font-weight-medium;
+    text-transform: uppercase;
+    // letter-spacing: 0.12em;
+  }
+
+  svg {
+    width: 12px;
+
+    path {
+      fill: $ctc-gold;
+    }
+  }
+}
+
+.InfoBtn.MuiButtonBase-root {
+  background: $white;
+  color: $gray;
+  border: 1px solid $gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+
+  &:hover {
+    background: $white;
+    color: $gray;
+
+    @media (hover: hover) {
+      transform: translateY(-0.1em);
+    }
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2pt rgba(0, 0, 0, 0.1) !important;
+  }
+
+  svg {
+    height: 16px;
+
+    path {
+      fill: $gray;
+    }
+  }
+}
+
+.SecondaryBtn.MuiButtonBase-root {
+  background: $secondary;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $xl-button-radius;
+  transition: 0.5s ease-in-out;
+  // box-shadow: 0px 7px 23px rgba(186, 0, 32, 0.3);
+
+  &:hover {
+    background: $secondary-hover;
+    color: $white;
+
+    @media (hover: hover) {
+      transform: translateY(-0.1em);
+    }
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2pt rgba(186, 0, 32, 0.3) !important;
+  }
+
+  &.Mui-disabled {
+    background-color: $secondary;
+    color: $white;
+
+    &:hover {
+      background-color: $secondary;
+      color: $white;
+    }
+  }
+
+  .BtnLabel {
+    font-family: $gotham;
+    font-weight: $font-weight-medium;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  svg {
+    path {
+      fill: $ctc-gold;
+    }
+  }
+}
+
+.IconBtn.MuiButtonBase-root {
+  background: $primary;
+  border: 2px solid $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: $bp-md-max) {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+  }
+
+  @media (min-width: $bp-lg-min) {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+  }
+
+  &:hover {
+    @media (hover: hover) {
+      background: $white;
+
+      svg {
+        path {
+          fill: $primary;
+        }
+      }
+
+      transform: translateY(-0.1em);
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  svg {
+    height: auto;
+
+    @media (max-width: $bp-md-max) {
+      width: 7px;
+    }
+
+    @media (min-width: $bp-lg-min) {
+      width: 10px;
+    }
+
+    path {
+      fill: $white;
+    }
+  }
+}
+
+.SmBtn.MuiButtonBase-root {
+  min-height: 36px;
+
+  @media (max-width: $bp-sm-max) {
+    padding: 8px 12px;
+  }
+
+  @media (min-width: $bp-sm-min) {
+    padding: 8px 20px;
+  }
+
+  .BtnLabel {
+    font-size: 17px;
+
+    svg {
+      width: 13px;
+    }
+
+    img {
+      width: 18px;
+      margin-right: 8px;
+    }
+  }
+
+  &.IconBefore {
+    svg {
+      margin-right: 12px;
+    }
+  }
+
+  &.IconAfter {
+    svg {
+      margin-left: 12px;
+    }
+  }
+}
+
+.MdBtn.MuiButtonBase-root {
+  border-radius: $sm-button-radius;
+
+  .BtnLabel {
+    font-weight: $font-weight-bold;
+
+    @media (max-width: $bp-sm-max) {
+      font-size: 16px;
+    }
+
+    @media (min-width: $bp-md-min) {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: $bp-sm-max) {
+    padding: 2px 12px;
+  }
+
+  @media (min-width: $bp-md-min) {
+    padding: 8px 16px;
+  }
+
+  svg {
+    height: 16px;
+    min-width: 12px;
+    margin-right: 12px;
+  }
+}
+
+.BtnLabel {
+  line-height: 100%;
+}
+
+.MuiButton-label {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.LgBtn.MuiButtonBase-root {
+  svg {
+    width: 8px;
+
+    @media (max-width: $bp-xs-max) {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 24px;
+    }
+  }
+
+  @media (max-width: $bp-md-max) {
+    width: 100%;
+    height: 46px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+  }
+
+  @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+    border-radius: $xl-button-radius;
+  }
+
+  .BtnLabel {
+    font-weight: $font-weight-black;
+
+    @media (max-width: $bp-md-max) {
+      font-size: 16px;
+    }
+
+    @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+      font-size: 15px;
+    }
+
+    @media (min-width: $bp-lg-min) and (max-width: $bp-lg-max) {
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: $bp-sm-min) and (max-width: $bp-md-max) {
+    padding: 8px 20px;
+    height: auto;
+    width: auto;
+
+    .BtnLabel {
+      font-size: 17px;
+    }
+
+    svg {
+      margin-left: 12px;
+    }
+  }
+
+  @media (min-width: $bp-lg-min) {
+    padding: 12px 32px;
+
+    .BtnLabel {
+      font-size: 22px;
+    }
+
+    svg {
+      margin-left: 16px;
+    }
+  }
+}
+
+.Mui-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.BtnLabel {
+  height: 100%;
+}
+
+.Mui-disabled {
+  opacity: 0.8;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(33, 134, 73, 0.5);
+}
+
+.btn-copy-mobile {
+  @media (min-width: $bp-sm-min) {
+    display: none;
+  }
+}
+
+.btn-copy-desktop {
+  @media (max-width: $bp-xs-max) {
+    display: none;
+  }
+}

@@ -1,0 +1,13 @@
+.how-it-works {
+  .container {
+    @media (min-width: 1200px) {
+      max-width: 850px;
+    }
+  }
+
+  p {
+    @media (min-width: $bp-lg-min) {
+      margin-top: 40px;
+    }
+  }
+}

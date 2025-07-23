@@ -1,0 +1,11 @@
+.deeds-list-view,
+.form-page,
+.how-it-works {
+  @media (max-width: $bp-sm-max) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $bp-md-min) {
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,1160 @@
+.tree-scene {
+  position: relative;
+
+  .container {
+    position: relative;
+    z-index: 120;
+
+    @media (max-width: $bp-sm-max) {
+      padding-bottom: 12px;
+    }
+
+    @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+      max-width: 100%;
+    }
+
+    .images-loading-container {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: auto;
+
+      @media (max-width: $bp-xs-max) {
+        top: 90px;
+      }
+
+      @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+        top: 110px;
+      }
+
+      @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+        top: 170px;
+      }
+
+      @media (min-width: $bp-lg-min) {
+        top: 40px;
+      }
+    }
+  }
+
+  .deed-count {
+    z-index: 50;
+
+    @media (max-width: $bp-xs-max) {
+    }
+
+    @media (min-width: $bp-md-min) {
+      position: absolute;
+    }
+
+    @media (min-width: 1400px) and (max-width: 1799.98px) {
+      // top: -66px;
+    }
+
+    h1 {
+      br {
+        @media (max-width: $bp-sm-max) {
+          display: none;
+        }
+      }
+
+      @media (max-width: $bp-sm-max) {
+        font-size: 5.4vw;
+        text-align: center;
+        margin-bottom: 4px;
+      }
+
+      @media (min-width: $bp-md-min) and (max-width: $bp-lg-max) {
+        font-size: 30px;
+        margin-top: 8px;
+      }
+
+      @media (min-width: 1400px) and (max-width: 1799.98px) {
+        max-width: 390px;
+      }
+    }
+
+    h4 {
+      @media (max-width: $bp-sm-max) {
+        font-size: 3.4vw;
+        text-align: center;
+      }
+
+      @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+        max-width: 270px;
+      }
+
+      @media (min-width: $bp-md-min) and (max-width: $bp-lg-max) {
+        font-size: 13px;
+        margin-top: 4px;
+      }
+
+      @media (min-width: 1800px) {
+        max-width: 430px;
+      }
+    }
+
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .PrimaryBtn {
+      @media (max-width: $bp-sm-max) {
+        display: none;
+      }
+
+      @media (min-width: $bp-sm-max) {
+        margin-top: 16px;
+        margin-left: 0;
+      }
+    }
+
+    @media (max-width: $bp-sm-max) {
+      margin: 16px 0 8px;
+    }
+  }
+
+  .tree-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+
+    @media (max-width: $bp-xs-max) {
+      min-height: 280px;
+      margin-top: 16px;
+    }
+
+    @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+      min-height: 520px;
+    }
+
+    @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+      min-height: 520px;
+    }
+
+    @media (min-width: $bp-lg-min) and (max-width: $bp-lg-max) {
+      min-height: 350px;
+    }
+
+    @media (min-width: $bp-xl-min) {
+      min-height: 680px;
+    }
+
+    & > a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .tree {
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+
+      .bulb {
+        position: absolute;
+
+        img {
+          width: 100%;
+          position: relative;
+          z-index: 2;
+        }
+
+        .bulb-light {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: radial-gradient(50% 50% at 50% 50%, rgba(254, 233, 104, 0.8) 35.42%, rgba(255, 255, 255, 0) 100%);
+          opacity: 0;
+          z-index: 1;
+          transform-origin: center center;
+
+          &.bulb-light-animated {
+            animation-timing-function: linear;
+            animation-name: flicker;
+            animation-duration: 2s;
+            animation-iteration-count: 2;
+          }
+        }
+
+        .community-bulb-light {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          z-index: 1;
+          transform-origin: center center;
+
+          &.community-bulb-light-blue {
+            background: radial-gradient(
+              50% 50% at 50% 50%,
+              rgba(51, 249, 255, 0.8) 45.42%,
+              rgba(255, 255, 255, 0) 100%
+            );
+          }
+
+          &.community-bulb-light-red {
+            background: radial-gradient(
+              50% 50% at 50% 50%,
+              rgba(248, 119, 101, 0.8) 45.42%,
+              rgba(255, 255, 255, 0) 100%
+            );
+          }
+
+          &.community-bulb-light-green {
+            background: radial-gradient(
+              50% 50% at 50% 50%,
+              rgba(184, 228, 119, 0.8) 45.42%,
+              rgba(255, 255, 255, 0) 100%
+            );
+          }
+
+          &.community-bulb-light-purple {
+            background: radial-gradient(
+              50% 50% at 50% 50%,
+              rgba(226, 105, 236, 0.8) 45.42%,
+              rgba(255, 255, 255, 0) 100%
+            );
+          }
+
+          &.community-bulb-light-yellow {
+            background: radial-gradient(
+              50% 50% at 50% 50%,
+              rgba(254, 233, 104, 0.8) 45.42%,
+              rgba(255, 255, 255, 0) 100%
+            );
+          }
+
+          &.community-bulb-light-animated {
+            animation-timing-function: linear;
+            animation-name: flicker;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+          }
+        }
+
+        @keyframes flicker {
+          0% {
+            opacity: 0;
+            transform: scale(1.2);
+          }
+          7% {
+            opacity: 0.6;
+          }
+          17% {
+            opacity: 0.5;
+          }
+          25% {
+            opacity: 1;
+          }
+          35% {
+            opacity: 0.25;
+          }
+          40% {
+            opacity: 1;
+            transform: scale(1.6);
+          }
+          50% {
+            opacity: 0.85;
+          }
+          70% {
+            opacity: 0.4;
+          }
+          80% {
+            opacity: 0.9;
+            transform: scale(1.6);
+          }
+          90% {
+            opacity: 0.5;
+          }
+          100% {
+            opacity: 0;
+            transform: scale(1.2);
+          }
+        }
+      }
+
+      .presents {
+        position: absolute;
+        // bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(20%);
+      }
+
+      .user-tree-star {
+        position: absolute;
+
+        transform: rotate(0deg) scale(1);
+        opacity: 0;
+        z-index: 200;
+
+        &.visible-user-tree-star {
+          opacity: 1;
+        }
+
+        &.animate-user-tree-star {
+          -webkit-animation: animateStar 3s 1 ease-in-out both;
+          animation: animateStar 3s 1 ease-in-out both;
+          transform-origin: center;
+        }
+
+        @keyframes animateStar {
+          0% {
+            opacity: 0;
+            transform: rotate(-360deg) scale(1);
+          }
+
+          15% {
+            opacity: 1;
+          }
+
+          30% {
+            opacity: 1;
+            transform: rotate(-360deg) scale(2);
+          }
+
+          60% {
+            transform: rotate(-360deg) scale(2);
+          }
+
+          100% {
+            opacity: 1;
+            transform: rotate(0deg) scale(1);
+          }
+        }
+      }
+
+      .top-leaves {
+        position: absolute;
+        pointer-events: none;
+      }
+    }
+
+    .deed-with-tooltip {
+      position: absolute;
+      z-index: 50;
+      transition: all 0.5s ease-in;
+
+      &.deed-with-tooltip-visible {
+        opacity: 1;
+      }
+
+      &.deed-with-tooltip-hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      &.deed-with-tooltip-top {
+        margin-top: 16px;
+        width: 100%;
+
+        &.deed-with-tooltip-visible {
+        }
+
+        &.deed-with-tooltip-hidden {
+          transform: translateY(40px) !important;
+        }
+      }
+
+      &.deed-with-tooltip-bottom {
+        margin-top: -8px;
+        width: 100%;
+
+        &.deed-with-tooltip-visible {
+          transform: translateY(-100%);
+        }
+
+        &.deed-with-tooltip-hidden {
+          transform: translateY(calc(-100% - 20px));
+        }
+      }
+
+      &.deed-with-tooltip-left {
+        margin-left: 8px;
+
+        &.deed-with-tooltip-visible {
+          transform: translateY(-50%);
+        }
+
+        &.deed-with-tooltip-hidden {
+          transform: translateY(-50%) translateX(20px);
+        }
+      }
+
+      &.deed-with-tooltip-right {
+        margin-left: -8px;
+
+        &.deed-with-tooltip-visible {
+          transform: translateY(-50%) translateX(-100%);
+        }
+
+        &.deed-with-tooltip-hidden {
+          transform: translateY(-50%) translateX(calc(-100% - 20px));
+        }
+      }
+
+      .deed-tooltip-arrow {
+        position: absolute;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.18) 0px 0px 0px 1px;
+        transform-origin: center center;
+        width: 15px;
+        height: 15px;
+        margin: 3px;
+        z-index: 1;
+
+        @media (max-width: $bp-md-max) {
+          &.deed-tooltip-arrow-top {
+            top: 0;
+            transform: translateY(-50%) rotate(45deg);
+          }
+
+          &.deed-tooltip-arrow-bottom {
+            bottom: 0;
+            transform: translateY(50%) rotate(45deg);
+          }
+        }
+
+        @media (min-width: $bp-lg-min) {
+          &.deed-tooltip-arrow-left {
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%) translateX(-50%) rotate(45deg);
+          }
+
+          &.deed-tooltip-arrow-right {
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%) translateX(50%) rotate(45deg);
+          }
+        }
+      }
+
+      .deed-tooltip-shadow {
+        border-radius: 6px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 15px, rgba(0, 0, 0, 0.1) 0px 0px 3px;
+        height: calc(100% - 0px);
+        width: calc(100% - 0px);
+        position: absolute;
+        z-index: 0;
+      }
+
+      .deed-tooltip-container {
+        position: relative;
+        background: $white;
+        border-radius: 6px;
+        z-index: 2;
+
+        @media (max-width: $bp-xs-max) {
+          padding: 8px;
+        }
+
+        @media (min-width: $bp-sm-min) and (max-width: $bp-md-max) {
+          padding: 8px 16px;
+        }
+
+        @media (min-width: $bp-lg-min) {
+          padding: 8px 16px;
+          max-width: 500px;
+        }
+
+        h5 {
+          @media (max-width: $bp-xs-max) {
+            font-size: 16px;
+          }
+
+          @media (min-width: $bp-sm-min) and (max-width: $bp-md-max) {
+            font-size: 18px;
+          }
+        }
+
+        &.your-tree-tooltip-container {
+          h6 {
+            margin-bottom: 0;
+            font-weight: $font-weight-bold;
+
+            @media (max-width: $bp-xs-max) {
+              font-size: 11px;
+            }
+
+            @media (min-width: $bp-sm-min) and (max-width: $bp-md-max) {
+              font-size: 12px;
+            }
+
+            @media (min-width: $bp-lg-min) {
+              font-size: 14px;
+              white-space: nowrap;
+            }
+
+            .highlighted {
+              color: $primary;
+              display: inline !important;
+            }
+          }
+        }
+
+        &.community-tooltip-container {
+          h6 {
+            font-weight: $font-weight-bold;
+
+            @media (max-width: $bp-xs-max) {
+              font-size: 11px;
+            }
+
+            @media (min-width: $bp-sm-min) and (max-width: $bp-md-max) {
+              font-size: 12px;
+            }
+
+            @media (min-width: $bp-lg-min) {
+              font-size: 14px;
+              white-space: nowrap;
+            }
+
+            .highlighted {
+              color: $primary;
+              display: inline !important;
+            }
+          }
+
+          h5 {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    & > a {
+      width: 100%;
+    }
+
+    .PrimaryBtn {
+      margin-top: 16px;
+
+      @media (min-width: $bp-sm-max) {
+        display: none;
+      }
+    }
+  }
+
+  .tree-background {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .hide-intro-page {
+    display: none;
+  }
+}
+
+// .hide-tree-scene {
+//   @media (max-width: $bp-xs-max) {
+//     display: none;
+//   }
+// }
+
+.community-background {
+  background: linear-gradient(180deg, #1b204d 0%, #9cdbed 100%);
+
+  // &.community-background-game-info {
+  //   @media (max-width: $bp-xs-max) {
+  //     background: $white;
+  //   }
+  // }
+
+  #content-wrap {
+    @media (min-height: 1300px) {
+      display: flex;
+      flex-direction: column;
+
+      #background-container {
+        flex-grow: 1;
+        background-color: $white;
+      }
+    }
+  }
+}
+
+.mytree-background {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(236, 231, 223, 0.5) 27.08%,
+    rgba(223, 215, 200, 0.5) 100%
+  );
+
+  #content-wrap {
+    @media (min-height: 1300px) {
+      display: flex;
+      flex-direction: column;
+
+      #background-container {
+        flex-grow: 1;
+        background-color: #db0032;
+      }
+    }
+  }
+}
+
+.community-tree {
+  .container {
+    @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+      padding-bottom: 60px;
+    }
+
+    @media (min-width: $bp-lg-min) {
+      padding-bottom: 80px;
+    }
+  }
+  .deed-count {
+    h1 {
+      color: $white;
+
+      .highlighted {
+        color: #f0d572;
+      }
+    }
+
+    h4 {
+      color: $white;
+    }
+  }
+
+  .tree-background {
+    .buildings {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      display: flex;
+
+      @media (max-width: $bp-md-max) {
+        flex-direction: column;
+      }
+
+      // @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+      //   height: 590px;
+      // }
+
+      // @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+      //   height: 610px;
+      // }
+
+      // @media (min-width: $bp-lg-min) and (max-width: $bp-lg-max) {
+      //   height: 640px;
+      // }
+
+      // @media (min-width: $bp-xl-min) and (max-width: 1999.98px) {
+      //   height: 700px;
+      // }
+
+      @media (min-width: 1780px) {
+        align-items: flex-end;
+        justify-content: center;
+        height: 783.33px;
+      }
+
+      .main-buildings-container {
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+      }
+
+      .main-buildings {
+        @media (max-width: $bp-sm-max) {
+          height: 350px;
+        }
+
+        @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+          width: 1000px;
+        }
+
+        // @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+        //   height: 610px;
+        // }
+
+        @media (min-width: $bp-lg-min) and (max-width: $bp-lg-max) {
+          height: 640px;
+        }
+
+        @media (min-width: $bp-xl-min) and (max-width: 1779.98px) {
+          height: 700px;
+        }
+
+        @media (max-width: 1779.98px) {
+          min-width: 100%;
+        }
+
+        @media (min-width: 1780px) {
+          width: 2000px;
+          height: 783.33px;
+        }
+
+        .lamp-post {
+          @media (max-width: $bp-md-max) {
+            display: none;
+          }
+        }
+      }
+
+      .snow-ground {
+        width: 100%;
+        background: $white;
+
+        @media (max-width: $bp-sm-max) {
+          height: 100px;
+        }
+
+        @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+          height: 30px;
+        }
+
+        @media (min-width: $bp-lg-min) and (max-width: $bp-lg-max) {
+          flex: 1;
+        }
+      }
+
+      .left-buildings,
+      .right-buildings {
+        @media (max-width: 1779.98px) {
+          display: none;
+        }
+
+        @media (min-width: 1780px) {
+          width: calc(50vw - 1000px);
+          height: 783.33px;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+
+      .left-buildings {
+        @media (min-width: 1780px) {
+          background-image: url('../../images/scenes/buildings-left.svg');
+          background-position: left bottom;
+        }
+      }
+
+      .right-buildings {
+        @media (min-width: 1780px) {
+          background-image: url('../../images/scenes/buildings-right.svg');
+          background-position: right bottom;
+        }
+      }
+
+      .buildings-clock {
+        position: absolute;
+        z-index: 3;
+
+        @media (max-width: $bp-xs-max) {
+          display: none;
+        }
+
+        .hours,
+        .minutes {
+          position: absolute;
+          top: calc(50% - 2px);
+          left: 50%;
+          transform-origin: center left;
+          animation-name: Clock;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+
+          @media (max-width: 1299.98px) {
+            height: 2px;
+          }
+
+          @media (min-width: 1300px) {
+            height: 3px;
+          }
+        }
+
+        .hours {
+          animation-duration: 36s;
+        }
+
+        .minutes {
+          animation-duration: 6s;
+        }
+
+        @keyframes Clock {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+
+    .people-left {
+      position: absolute;
+
+      @media (max-width: $bp-md-max) {
+        display: none;
+      }
+
+      @media (max-width: $bp-lg-max) {
+        right: 66vw;
+      }
+
+      @media (min-width: $bp-lg-min) {
+        max-width: 500px;
+        right: calc(50vw + 280px);
+      }
+    }
+
+    .people-right {
+      position: absolute;
+
+      @media (max-width: $bp-md-max) {
+        display: none;
+      }
+
+      @media (max-width: $bp-lg-max) {
+        left: 68vw;
+      }
+
+      @media (min-width: $bp-lg-min) {
+        max-width: 500px;
+        left: calc(50vw + 270px);
+      }
+    }
+  }
+
+  .tree-container {
+    .tree {
+      width: 100%;
+
+      @media (min-width: $bp-sm-min) and (max-width: $bp-md-max) {
+        max-width: 500px;
+      }
+
+      @media (min-width: $bp-lg-min) {
+        max-width: 650px;
+      }
+
+      @media (min-width: 1280px) and (max-width: 1799.98px) {
+        margin-right: -348px;
+      }
+    }
+
+    .PrimaryBtn.MuiButtonBase-root {
+      margin-top: 24px;
+    }
+  }
+}
+
+.your-tree {
+  .container {
+    @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+      padding-bottom: 40px;
+    }
+
+    @media (min-width: $bp-lg-min) {
+      padding-bottom: 40px;
+    }
+  }
+
+  .deed-count {
+    h1 {
+      .highlighted {
+        color: $primary;
+      }
+    }
+
+    h2 {
+      margin-top: 12px;
+    }
+  }
+
+  .bottom-links {
+    @media (max-width: $bp-sm-max) {
+      margin-top: 24px;
+    }
+  }
+
+  .tree-background {
+    .carpet {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      z-index: 2;
+
+      @media (max-width: $bp-xs-max) {
+        height: 160px;
+      }
+
+      @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+        height: 190px;
+      }
+
+      @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+        min-height: 135px;
+        min-width: 100%;
+        height: auto;
+        width: auto;
+        max-height: 160px;
+      }
+
+      @media (min-width: $bp-lg-min) and (max-width: $bp-lg-max) {
+        height: 175px;
+        width: 100%;
+      }
+
+      @media (min-width: $bp-xl-min) {
+        height: 200px;
+        width: 100%;
+      }
+    }
+
+    .snowflakes {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+
+      @media (max-width: $bp-xs-max) {
+        width: 300%;
+      }
+
+      @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+        width: 200%;
+      }
+
+      @media (min-width: $bp-md-min) {
+        width: 100%;
+      }
+    }
+
+    .chimney {
+      position: absolute;
+      z-index: 3;
+
+      img {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+      }
+
+      @media (max-width: $bp-sm-max) {
+        display: none;
+      }
+
+      @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+        right: 69vw;
+      }
+
+      @media (min-width: $bp-lg-min) and (max-width: $bp-lg-max) {
+        bottom: 100px !important;
+      }
+
+      @media (min-width: $bp-lg-min) {
+        max-width: 390px;
+        right: calc(50vw + 190px);
+      }
+
+      .chimney-inside {
+        position: absolute;
+        background: #534e47;
+        z-index: 1;
+        overflow: hidden;
+        border: 2px solid #ece6dd;
+
+        .fire {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          transform: scale(1);
+          background: radial-gradient(44.1% 59.11% at 50.02% 49.96%, #cb6c03 30%, #534e47 100%);
+          opacity: 0.3;
+          animation: fire-glow 2s ease-in 0s infinite;
+
+          @keyframes fire-glow {
+            0% {
+              opacity: 0.5;
+              transform: scale(1);
+            }
+            30% {
+              opacity: 1;
+              transform: scale(1.5);
+            }
+
+            70% {
+              opacity: 1;
+              transform: scale(1.5);
+            }
+            100% {
+              opacity: 0.5;
+              transform: scale(1);
+            }
+          }
+        }
+      }
+
+      .flip-heart {
+        position: absolute;
+        background-color: transparent;
+        perspective: 1000px;
+        z-index: 4;
+        transform: translateX(-100%) translateY(-2px);
+
+        .flip-heart-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          transform-style: preserve-3d;
+          animation: flip-heart 3s ease-in 0s infinite;
+        }
+
+        .flip-heart-front,
+        .flip-heart-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          -webkit-backface-visibility: hidden; /* Safari */
+          backface-visibility: hidden;
+
+          svg {
+            width: 100%;
+          }
+        }
+
+        .flip-heart-back {
+          transform: rotateY(180deg);
+        }
+
+        @keyframes flip-heart {
+          0% {
+            transform: rotateY(0deg);
+          }
+
+          20% {
+            transform: rotateY(180deg);
+          }
+
+          40% {
+            transform: rotateY(0);
+          }
+          100% {
+            transform: rotateY(0deg);
+          }
+        }
+      }
+    }
+
+    .window {
+      position: absolute;
+      z-index: 3;
+      max-width: 334px;
+
+      img {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+      }
+
+      @media (max-width: $bp-sm-max) {
+        display: none;
+      }
+
+      @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+        left: 70vw;
+      }
+
+      @media (min-width: $bp-lg-min) and (max-width: $bp-lg-max) {
+        bottom: 120px !important;
+      }
+
+      @media (min-width: $bp-lg-min) {
+        max-width: 210px;
+        left: calc(50vw + 250px);
+      }
+
+      .window-outside {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(180deg, rgba(27, 32, 77, 0.2) 0%, rgba(156, 219, 237, 0.2) 100%), #7fd6d3;
+        z-index: 1;
+        overflow: hidden;
+        border: 2px solid $white;
+      }
+    }
+  }
+
+  .tree-container {
+
+    .tree {
+      width: 90%;
+
+      @media (min-width: $bp-xs-max) {
+        margin-bottom: 40px;
+      }
+
+      @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+        margin-bottom: 24px;
+      }
+
+      @media (min-width: $bp-sm-min) and (max-width: $bp-md-max) {
+        margin-top: 20px;
+        max-width: 450px;
+      }
+
+      @media (min-width: 1280px) and (max-width: 1799.98px) {
+        margin-right: -348px;
+      }
+
+      @media (min-width: $bp-lg-min) {
+        margin-top: 40px;
+        max-width: 600px;
+      }
+    }
+
+    .PrimaryBtn.MuiButtonBase-root {
+      background-color: $white;
+      color: $primary;
+      border-color: $white;
+      margin-top: 32px;
+
+      svg {
+        path {
+          fill: $primary;
+        }
+      }
+    }
+  }
+}
+
+.loading-image-visible {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.loading-image-hidden {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}

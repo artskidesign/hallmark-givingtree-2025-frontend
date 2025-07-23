@@ -1,0 +1,31 @@
+.form-container {
+  .text-field {
+    @media (max-width: $bp-sm-max) {
+      margin-top: 16px;
+    }
+  }
+
+  .form-main-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: $bp-sm-max) {
+      margin-top: 8px;
+    }
+
+    @media (min-width: $bp-lg-min) {
+      margin-top: 40px;
+    }
+
+    @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+      margin-top: 24px;
+    }
+  }
+
+  .row:first-of-type {
+    @media (min-width: $bp-lg-min) {
+      margin-bottom: 16px;
+    }
+  }
+}

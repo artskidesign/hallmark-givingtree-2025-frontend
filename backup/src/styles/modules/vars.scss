@@ -1,0 +1,77 @@
+$hallmark-red: #e21219;
+$white: #ffffff;
+$text-placeholder: #b0aeae;
+
+$ctc-green: #218649;
+$ctc-evergreen: #2a5037;
+$ctc-red: #e21219;
+$ctc-darkred: #ba0020;
+$ctc-gold: #fcd574;
+
+$fall-harvest-header-bg: #c05411;
+
+$text: #3e3e3e;
+$text-light: #644813;
+$text-darkgreen: #144733;
+
+$gray: #7c7c7c;
+$dark-gray: #b8b8b8;
+
+$primary: $ctc-darkred;
+$secondary: $ctc-green;
+$input-outline: $dark-gray;
+$input-label: #636b70;
+$input-placeholder: #b8b8b8;
+
+$primary-hover: darken($primary, 10%);
+$secondary-hover: darken($secondary, 10%);
+$white-hover: darken($white, 10%);
+
+$facebook-blue: #3b5998;
+$google-blue: #4285f4;
+$twitter-blue: #1b95e0;
+$pinterest-red: #bd081c;
+$email-green: #82bc00;
+
+$facebook-blue-hover: darken($facebook-blue, 10%);
+$google-blue-hover: darken($google-blue, 10%);
+$twitter-blue-hover: darken($twitter-blue, 10%);
+$pinterest-red-hover: darken($pinterest-red, 10%);
+$email-green-hover: darken($email-green, 10%);
+
+$sm-button-shadow: 0px 6px 20px rgba(186, 0, 32, 0.3);
+$md-button-shadow: 0px 7px 23px rgba(186, 0, 32, 0.3);
+$lg-button-shadow: 0px 6px 34px rgba(186, 0, 32, 0.3), 0px 4px 9px rgba(0, 0, 0, 0.1);
+
+$xs-button-radius: 8px;
+$sm-button-radius: 4px;
+$xl-button-radius: 8px;
+
+$table-shadow: 0px -4px 15px rgba(98, 11, 11, 0.1);
+$table-outline: #b9c8c2;
+
+$primary-gradient: linear-gradient(180deg, #359a5d 0%, #0d7235 100%);
+$gold-gradient: linear-gradient(180deg, #f8e0a2 0%, #c6a24d 100%);
+
+$primary-gradient-hover: linear-gradient(180deg, #218649 0%, #005e21 100%);
+
+$facebook-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1), 0px 1px 14px rgba(66, 103, 178, 0.4);
+$twitter-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 2px 14px rgba(27, 149, 224, 0.4);
+$pinterest-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(189, 8, 28, 0.2);
+$email-shadow: 0px 0px 4px rgba(60, 134, 7, 0.4), 0px 4px 9px rgba(0, 0, 0, 0.1);
+
+$gotham: 'Gotham SSm A', 'Gotham SSm B', Tahoma, Helvetica, sans-serif;
+$font-weight-light: 300;
+$font-weight-book: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 800;
+
+$bp-xs-max: 575.98px;
+$bp-sm-min: 576px;
+$bp-sm-max: 767.98px;
+$bp-md-min: 768px;
+$bp-md-max: 991.98px;
+$bp-lg-min: 992px;
+$bp-lg-max: 1199.98px;
+$bp-xl-min: 1200px;

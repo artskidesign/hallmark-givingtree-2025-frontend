@@ -1,0 +1,176 @@
+body {
+  p,
+  h3,
+  h4 {
+    font-weight: $font-weight-book;
+    color: $text;
+  }
+
+  p {
+    line-height: 140%;
+    font-family: $gotham;
+
+    @media (max-width: $bp-xs-max) {
+      font-size: 14px;
+    }
+  }
+
+  h1 {
+    font-family: $gotham;
+    color: $text;
+    font-weight: $font-weight-medium;
+
+    .highlighted {
+      color: $primary;
+    }
+  }
+
+  h2 {
+    font-family: $gotham;
+    color: $text;
+    font-weight: $font-weight-book;
+    font-size: 1.8rem;
+  }
+
+  h4 {
+    font-family: $gotham;
+    color: $text;
+    font-weight: $font-weight-medium;
+    font-size: 1.3rem;
+  }
+
+  h5 {
+    font-family: $gotham;
+    color: $text;
+    font-weight: $font-weight-book;
+  }
+
+  h6 {
+    font-family: $gotham;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: $text-darkgreen;
+  }
+}
+
+.header-text {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    @media (max-width: $bp-xs-max) {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+      font-size: 32px;
+      margin-bottom: 0;
+    }
+  }
+
+  .header-text-ornament {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $bp-md-max) {
+      margin-top: 8px;
+    }
+
+    @media (min-width: $bp-lg-min) {
+      margin-top: 1em;
+    }
+
+    .line {
+      height: 1px;
+      background: #c1c1c1;
+
+      @media (max-width: $bp-md-max) {
+        width: 85px;
+      }
+
+      @media (min-width: $bp-lg-min) {
+        width: 113px;
+      }
+    }
+
+    svg {
+      @media (max-width: $bp-md-max) {
+        width: 13px;
+        margin: 0 16px;
+      }
+
+      @media (min-width: $bp-lg-min) {
+        width: 18px;
+        margin: 0 20px;
+      }
+    }
+  }
+
+  @media (max-width: $bp-md-max) {
+    margin: 16px 0;
+  }
+
+  @media (min-width: $bp-lg-min) {
+    margin: 24px 0;
+  }
+}
+
+.copy-desktop {
+  @media (max-width: $bp-xs-max) {
+    display: none;
+  }
+}
+
+a {
+  font-family: $gotham;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.centered {
+  text-align: center !important;
+}
+
+.bold {
+  font-weight: $font-weight-bold;
+}
+
+.black {
+  font-weight: $font-weight-bold;
+}
+
+.red {
+  color: $hallmark-red;
+}
+
+.darkred {
+  color: $ctc-darkred;
+}
+
+.evergreen {
+  color: $ctc-green;
+}
+
+.gold {
+  color: $ctc-gold;
+}
+
+a {
+  color: $ctc-evergreen;
+
+  @media (hover: hover) {
+    &:hover {
+      color: $ctc-evergreen;
+    }
+  }
+}

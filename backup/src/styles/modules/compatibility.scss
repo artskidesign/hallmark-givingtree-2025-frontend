@@ -1,0 +1,74 @@
+.notIE {
+  .community-tree {
+    .deed-count {
+      h1 {
+        .highlighted {
+          background: url('../../images/gold-texture.jpg') no-repeat;
+          background-size: cover;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.isIE {
+  .snow,
+  .top-leaves,
+  // .presents,
+  .buildings-clock {
+    display: none;
+  }
+
+  .your-tree {
+    .tree {
+      & > img:first-of-type {
+        @media (min-width: $bp-lg-min) {
+          height: 627px;
+        }
+      }
+    }
+  }
+
+  .tree-scene {
+    .container {
+      .explorer-loader {
+        display: none;
+      }
+    }
+  }
+
+  .community-tree {
+    .tree {
+      & > img:first-of-type {
+        @media (min-width: $bp-lg-min) {
+          height: 712px;
+        }
+      }
+    }
+  }
+
+  .tree-background {
+    .buildings {
+      .main-buildings-container {
+        width: 100%;
+
+        .main-buildings {
+          @media (max-width: 1999.98px) {
+            width: 100%;
+          }
+        }
+
+        .left-buildings,
+        .right-buildings {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .main-nav .tree-nav a button {
+    min-width: 190px;
+  }
+}

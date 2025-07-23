@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="title" content="Hallmark Channel's The Giving Tree" />
+    <meta name="description" content="Join thousands of people in performing good deeds this holiday season to light up the community tree and your own tree!" />
+    <title>Hallmark Channel's The Giving Tree</title>
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="%PUBLIC_URL%/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="%PUBLIC_URL%/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="%PUBLIC_URL%/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="%PUBLIC_URL%/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="%PUBLIC_URL%/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="%PUBLIC_URL%/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="%PUBLIC_URL%/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="%PUBLIC_URL%/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="%PUBLIC_URL%/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="%PUBLIC_URL%/ms-icon-144x144.png" />
+    <!--Facebook-->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hallmark Channel's The Giving Tree" />
+    <meta property="og:description" content="Join thousands of people in performing good deeds this holiday season to light up the community tree and your own tree!" />
+    <meta property="og:image" content="%PUBLIC_URL%/og_giving_tree.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <!--Twitter-->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Hallmark Channel's The Giving Tree" />
+    <meta property="twitter:description" content="Join thousands of people in performing good deeds this holiday season to light up the community tree and your own tree!" />
+    <meta property="twitter:image" content="https://thegivingtree.hallmarkchannel.com/og_giving_tree.jpg" />
+
+    <!--Google Domain Verification-->
+    <meta name="google-site-verification" content="N3873O8yVcTP21YLplfiXWnTwQlfWXPxq3nyR_npsPw" />
+
+    <!--Fonts-->
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/754174/6824832/css/fonts.css" />
+    <!--JavaScript-->
+    <script type="text/javascript" src="/api/config.js"></script>
+    <script src="https://www.hallmarkchannel.com/assets/js/omniture.js"></script>
+    <!--Manifest-->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <!-- Temp hack to fix bug with dev IE 11 polyfills -->
+    <% if (process.env.NODE_ENV === 'development') { %>
+    <script src="./core-js-polyfills.js"></script>
+    <% } %>
+  </head>
+  <body>
+    <!-- Google Analytics -->
+    <script>
+      var gaScript = document.createElement('script');
+      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.config.googleAnalyticsWebPropertyId;
+      document.body.appendChild(gaScript);
+
+      var crossDomainGaScript = document.createElement('script');
+      crossDomainGaScript.src =
+        'https://www.googletagmanager.com/gtag/js?id=' + window.config.crossDomainGoogleAnalyticsWebPropertyId;
+      document.body.appendChild(crossDomainGaScript);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', window.config.googleAnalyticsWebPropertyId, {
+        send_page_view: false,
+      });
+
+      gtag('config', window.config.crossDomainGoogleAnalyticsWebPropertyId, {
+        send_page_view: false,
+        linker: {
+          accept_incoming: true,
+        },
+      });
+    </script>
+
+    <!-- Freewheel -->
+    <script type="text/javaScript" src="https://mssl.fwmrm.net/libs/adm/6.24.0/AdManager.js"></script>
+
+    <!-- Begin comScore Tag -->
+    <script>
+      if (window.config.enableComScore) {
+        var _comscore = _comscore || [];
+        _comscore.push({ c1: '2', c2: '8272010' });
+        (function () {
+          var s = document.createElement('script'),
+            el = document.getElementsByTagName('script')[0];
+          s.async = true;
+          s.src =
+            (document.location.protocol == 'https:' ? 'https://sb' : 'http://b') + '.scorecardresearch.com/beacon.js';
+          el.parentNode.insertBefore(s, el);
+        })();
+      }
+    </script>
+    <noscript>
+      <img src="https://sb.scorecardresearch.com/p?c1=2&c2=8272010&cv=2.0&cj=1" />
+    </noscript>
+    <!-- End comScore Tag -->
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

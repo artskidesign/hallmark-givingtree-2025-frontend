@@ -1,0 +1,272 @@
+.MuiTableContainer-root {
+  background: $white;
+  border: 1px solid $table-outline;
+  box-shadow: $table-shadow;
+  border-radius: 10px;
+  margin: auto;
+  max-width: 980px;
+
+  .MuiTableCell-root {
+    font-family: $gotham;
+    font-weight: $font-weight-medium;
+    color: $text;
+
+    @media (max-width: $bp-xs-max) {
+      padding: 2px 16px;
+      height: 40px;
+      font-size: 12px;
+    }
+
+    @media (min-width: $bp-sm-min) and (max-width: $bp-sm-max) {
+      padding: 2px 16px;
+      height: 45px;
+      font-size: 14px;
+    }
+
+    @media (min-width: $bp-md-min) and (max-width: $bp-md-max) {
+      padding: 2px 16px;
+      height: 50px;
+      font-size: 16px;
+    }
+
+    @media (min-width: $bp-lg-min) {
+      font-size: 18px;
+    }
+
+    .hallmark-coin {
+      width: 20px;
+      margin-right: 6px;
+
+      @media screen and (min-width: $bp-md-min) {
+        width: 40px;
+        margin-right: 16px;
+      }
+    }
+
+    .MuiInput-formControl,
+    .MuiInput-formControl input {
+      font-size: inherit !important;
+      padding: 0;
+
+      &:before,
+      &:after {
+        bottom: -8px;
+      }
+    }
+  }
+
+  .MuiTableHead-root {
+    .MuiTableCell-head {
+      color: $ctc-darkred;
+      font-weight: $font-weight-bold;
+    }
+
+    .MuiTableCell-root {
+      border-bottom: none;
+    }
+  }
+
+  .MuiTableRow-root {
+    border-bottom: 1px solid $table-outline;
+    border-bottom-color: $table-outline !important;
+  }
+
+  .MuiTableBody-root {
+    .MuiTableRow-root {
+      &.is-user-score {
+        background: rgba(252, 213, 116, 0.2);
+      }
+
+      &.is-wildcard-round {
+        background: rgba(186, 0, 32, 0.1);
+
+        img {
+          @media (max-width: $bp-sm-max) {
+            width: 20px;
+            margin-left: 4px;
+          }
+
+          @media (min-width: $bp-md-min) {
+            width: 30px;
+            margin-left: 8px;
+          }
+        }
+      }
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+
+      &[style='border-bottom: 1px solid red;'] {
+        // border-bottom: 0 !important;
+        border-bottom-color: $table-outline !important;
+      }
+
+      &[style='border-bottom-color: red;'] {
+        // border-bottom: 0 !impotant;
+        border-bottom-color: $table-outline !important;
+      }
+
+      .MuiTableCell-root {
+        border-bottom: none;
+
+        svg {
+          // @media (max-width: $bp-xs-max) {
+          //   display: none;
+          // }
+
+          // @media (min-width: $bp-lg-min) {
+          //   width: 25px;
+          //   margin-right: 8px;
+          // }
+        }
+
+        .SmBtn.MuiButtonBase-root {
+          box-shadow: none;
+
+          @media (max-width: $bp-md-max) {
+            height: 30px;
+            min-height: 30px;
+            padding: 2px 8px;
+
+            .BtnLabel {
+              font-size: 14px;
+            }
+          }
+
+          &.IconOnly {
+            @media (max-width: $bp-xs-max) {
+              width: 30px;
+              min-width: 30px;
+              min-width: 30px;
+
+              svg {
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .totals-row {
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+
+  .extra-horizontal-padding {
+    @media screen and (min-width: $bp-md-min) {
+      td:first-child {
+        padding-left: 84px;
+      }
+
+      td:last-child {
+        padding-right: 84px;
+      }
+    }
+  }
+
+  .table-cell-desktop {
+    text-align: center;
+
+    @media (max-width: $bp-xs-max) {
+      display: none;
+    }
+  }
+
+  .table-copy-desktop {
+    @media (max-width: $bp-xs-max) {
+      display: none;
+    }
+  }
+
+  .round-status {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: $bp-lg-min) {
+      font-size: 15px;
+    }
+
+    .SmBtn.MuiButtonBase-root {
+      @media (max-width: $bp-md-max) {
+        margin-left: 8px;
+      }
+
+      @media (min-width: $bp-lg-min) {
+        margin-left: 16px;
+      }
+
+      .BtnLabel svg {
+        width: 12px;
+        margin-right: 8px;
+      }
+    }
+
+    &.round-status-done {
+      color: $ctc-green;
+    }
+
+    &.round-status-todo {
+      color: $ctc-darkred;
+    }
+
+    &.round-status-pending {
+      color: $dark-gray;
+    }
+  }
+}
+
+.MuiInputBase-root.MuiInput-root.MuiInput-underline.MuiInputBase-fullWidth.MuiInput-fullWidth.MuiInputBase-formControl.MuiInput-formControl {
+  font-family: $gotham;
+  font-size: 16px !important;
+  font-weight: $font-weight-book;
+}
+
+.MuiInput-underline:after {
+  border-bottom: 2px solid $primary !important;
+}
+
+.MuiInput-underline:before {
+  border-bottom: 1px solid $input-outline !important;
+}
+
+.MuiInput-underline:hover:not(.Mui-disabled):before {
+  border-bottom: 1px solid $input-outline !important;
+}
+
+.leagues-list {
+  .MuiTable-root {
+
+    .MuiTableCell-root:last-of-type {
+      @media (max-width: $bp-xs-max) {
+        width: 65px !important;
+      }
+    }
+  }
+
+  .MuiButtonBase-root.MuiButton-root.PrimaryBtn.SmBtn.ViewBtn {
+    @media (max-width: $bp-xs-max) {
+      width: 30px !important;
+      min-width: 30px;
+    }
+
+    span {
+      @media (max-width: $bp-xs-max) {
+        display: none;
+      }
+    }
+
+    svg {
+      @media (min-width: $bp-sm-min) {
+        display: none;
+      }
+
+      path {
+        fill: $white;
+      }
+    }
+  }
+}

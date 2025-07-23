@@ -1,0 +1,49 @@
+.banner-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  z-index: 999;
+
+  @media (max-width: 1279.98px) {
+    transform: translateX(-160px) translateY(-100%) translate3d(0, 100%, 0);
+    // width: 320px;
+    // height: 100px;
+    // background: #e1e1e1;
+  }
+
+  @media (min-width: 1280px) {
+    transform: translateX(-364px) translateY(-100%) translate3d(0, 100%, 0);
+    // width: 728px;
+    // height: 90px;
+    // background: #e1e1e1;
+  }
+
+  #_fw_ad_container_html_banner_ad_ {
+    display: flex !important;
+  }
+
+  &.fadeOutDown {
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+  }
+}
+
+.banner-right {
+  @media (min-width: 1280px) {
+    position: absolute;
+    top: 80px;
+    right: 24px;
+    z-index: 80;
+    // width: 300px;
+    // height: 600px;
+    // background: #e1e1e1;
+  }
+}
+
+.banner-footer {
+  width: 100%;
+  text-align: center;
+  background-color: #333;
+}

@@ -1,0 +1,94 @@
+.how-to-play {
+  h5 {
+    text-transform: capitalize;
+    font-variant: small-caps;
+  }
+  
+  .howtoplay-title {
+    display: flex;
+    margin: 24px 0 16px 0;
+    align-items: center;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    img {
+      @media (max-width: $bp-md-max) {
+        width: 30px;
+        margin-right: 8px;
+      }
+
+      @media (min-width: $bp-lg-min) {
+        width: 50px;
+        margin-right: 16px;
+      }
+    }
+
+    h5 {
+      margin-bottom: 0;
+
+      @media (max-width: $bp-sm-max) {
+        font-size: 1.5rem;
+      }
+
+      @media (min-width: $bp-md-min) {
+        font-size: 2rem;
+      }
+    }
+
+    & + p {
+      a {
+        color: $ctc-green;
+        text-decoration: underline;
+        font-weight: $font-weight-bold;
+      }
+    }
+  }
+
+  .GradientBtn.MuiButtonBase-root {
+    @media (max-width: $bp-md-max) {
+      margin: 16px auto;
+      min-width: 250px;
+
+      .BtnLabel {
+        font-weight: $font-weight-bold;
+        font-size: 18px;
+      }
+    }
+
+    @media (min-width: $bp-lg-min) {
+      margin: 32px auto;
+    }
+  }
+
+  .contact-email {
+    text-align: center;
+
+    a {
+      position: relative;
+      transition: 0.3s ease-in;
+
+      @media (max-width: 350px) {
+        font-size: 13px;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: $ctc-green;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          text-decoration: none;
+          color: $ctc-green;
+        }
+      }
+    }
+  }
+}
